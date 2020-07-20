@@ -1,20 +1,22 @@
 /*----------- Basic Setup------------*/
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *
 {
    margin: 0 ;
    padding: 0;
    box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
 }
 
 html
 {
     background-color: #fff;
-    color: #a22727;
+    color:#4f772d;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    
         
 }
 
@@ -25,11 +27,13 @@ html
     max-width: 1140px;
     margin : 0,auto,0,auto;
     
+    
 }
 
 section
 {
     padding: 100px 110px;
+   
 }
 
 
@@ -72,25 +76,28 @@ h1
     margin-bottom: 20px;
     font-size: 280%;
     word-spacing: 4px;
-    text-decoration-color:black;
+  
     text-transform: uppercase;
-    color:rgba(228, 228, 228, 0.932);
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     letter-spacing: 0.2px;
     word-spacing: 0.8px;
     font-weight: 700;
-    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+    
+}
+
+h1{
+  color: #4f772d;
 }
 
 
 .header-para1
 {
-    color:whitesmoke;
+    color:#4f772d;
     text-align:left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 130%;
     font-weight: 700;
-    margin-bottom:30px;
+    margin-bottom:5px;
     margin-top: 20px;
   /*  width: 70%; */
     font-style: normal;
@@ -98,18 +105,20 @@ h1
     max-width: 100%;
 }
 
-.header-para2
+.header-para2 
 {
     line-height: 145%;
   /*  width: 70%; */
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: -10px;
+
     font-weight: 600;
     font-size: 100%;
     color:rgba(228, 228, 228, 0.932);
     text-align: left;
     font-weight: 500;
     text-transform: capitalize;
+    
 
     max-width: 100%;
 }
@@ -117,7 +126,7 @@ h1
 
 .box
 {
-   padding: 2%;
+   padding: 5%;
   
 }
 
@@ -134,7 +143,7 @@ h1
 {
     display: inline-block;
     padding: 10px 30px;
-    border : 2px solid #a22727;
+    border : 2px solid #4f772d;
     border-radius: 200px;
     text-decoration-color: transparent;
     text-decoration-style: wavy;
@@ -142,13 +151,31 @@ h1
     color:whitesmoke;
     transition: 0.8s;
     font-size: x-large;
-    margin-top: 30px;
+    margin-top: 10px;
+
+}
+
+
+.btn-1
+{
+    display: inline-block;
+    padding: 10px 30px;
+    border : 2px solid #4f772d;
+    background-color:#4f772d;
+    border-radius: 200px;
+    text-decoration-color: transparent;
+    text-decoration-style: wavy;
+    font-weight: 500;
+    color:whitesmoke;
+    transition: 0.8s;
+    font-size: x-large;
+    margin-top: 10px;
 
 }
        
 .btn:hover
 {
-   background-color:black;
+   background-color:#4f772d;
 }
 
 /*--------------Header--------------*/
@@ -208,7 +235,7 @@ header
 .list li a:visited
 
 {
-    color: #f12020 ;
+    color: white ;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 100%;
@@ -223,8 +250,8 @@ header
 .list li a:hover,
 .list li a:active
 {
-    border-bottom: 2px solid #a22727;
-    color: black;
+    border-bottom: 2px solid #4f772d;
+    color: #4f772d;
 
 }
 
@@ -257,7 +284,7 @@ header
 .sticky.list li a:link,
 .sticky .list li a:visited
 {
-    color: #a22727;
+    color: #4f772d;
 }
 
 /*----------Management System Content--------------*/
@@ -275,18 +302,29 @@ h2
     text-align: center;
     margin-bottom:30px;
     text-transform: none;
-    color:black;
-}
+    color: #4f772d;
+    padding-left: 15%;}
 
 h2::after
 {
     display: block;
     height: 2px;
-    width: 150px;
+    width: 300px;
     margin: 0 auto; /* to center*/
-    background-color: #000000;
+    background-color: white;
     content: "";
-    margin-top: 30px;   
+    margin-top: 20px;   
+}
+
+.features-js h2::after
+{
+  display: block;
+    height: 2px;
+    width: 400px;
+    margin: 0 auto; /* to center*/
+    background-color: gray;
+    content: "";
+    margin-top: 20px;   
 }
 
 .long-para
@@ -301,11 +339,11 @@ h2::after
     color: rgba(13, 11, 11, 0.82);
     text-align: center;
     font-weight: 500;
+    word-spacing: 3px;
 
     max-width: 100%;
    
 }
-
 #Management li
 {
   color:black;
@@ -320,6 +358,7 @@ h2::after
     text-align: center;
     font-weight: 700;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 15%;
 }
 
 .photo
@@ -378,7 +417,12 @@ h2::after
     background-position: right;
     background-size: cover;
     background-attachment: fixed;
+    margin-top: 30%;
+    margin-bottom: 20px;
+   
 }
+
+
 
 h4
 {
@@ -387,11 +431,13 @@ h4
     word-spacing: 3px;
     text-align: center;
     margin-bottom:30px;
+    padding-left: 20%;
     text-transform: none;
     color:black;
-    font-size: xx-large;
+    font-size: 40px;
     letter-spacing: 1px;
     text-transform: uppercase;
+    
 }
   /*
   max-width: 100%;
@@ -414,6 +460,7 @@ h4
     font-weight: 500%;
     font-size: 120%;
     color:black;
+    padding-left: 20%;
     text-align: center;
     text-transform: uppercase;
 
@@ -546,6 +593,9 @@ h5
     background-size: cover;
     background-attachment: fixed;
     color:ghostwhite;
+    padding-right:30px;
+    background-color: red;
+    
 }
 
 
@@ -560,15 +610,29 @@ h5
     margin-top: 30px;
 }
 
+.review
+{
+  margin-left: 50px;
+  
+}
+
 blockquote
 {
 
-    line-height: 145%;
-    padding:2%;
+    line-height: 180%;
+    padding-right:7%;
     word-spacing: 1px;
     margin:10%;
+    padding-right: 30px;
   
 }
+
+.test
+{
+  padding-top: 20%;
+
+}
+
 
 
 
@@ -576,6 +640,7 @@ blockquote::before
 {
     content: "\201C";
     font-size: 400%;
+   
 }
 
 
@@ -584,6 +649,7 @@ cite
 {
     display: block;
     font-size: 90%;
+    padding-top: 10%;
 }
 
 
@@ -609,7 +675,7 @@ cite img
     margin: 0 auto;
     width:70%;
     widows: 70%;
-    background-color:whitesmoke;
+    margin-top: 80px;
 
     /*----
     background-image: url("blah2.jpg");
@@ -631,9 +697,12 @@ input[type=textarea]
 {
     
      width: 130%;
-    padding: 7px;
-    border-radius:3px;
-    margin-top: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius:8px;
+    color: #4f772d;
+    
+    
 
 }
 
@@ -653,6 +722,7 @@ footer
   bottom: 0px;
   width: 100%;
   background: #111;
+  margin-top: 30px;
 }
 .main-content
 {
@@ -688,7 +758,7 @@ footer
   content: '';
   height: 2px;
   width: 15%;
-  background: #f12020;
+  background: #4f772d;
   top: -10px;
 }
 .left .content p
@@ -718,7 +788,7 @@ footer
 }
 .left .content .social a span:hover
 {
-  background: #f12020;
+  background:  #4f772d;
 }
 .center .content .fas
 {
@@ -734,7 +804,7 @@ footer
 }
 .center .content .fas:hover
 {
-  background: #f12020;
+  background:  #4f772d;
 }
 .center .content .text
 {
@@ -766,7 +836,7 @@ footer
 }
 .right form input:focus, .right form .msgForm:focus
 {
-  outline-color: #3498db;
+  outline-color:  #4f772d;
 }
 .right form input
 {
@@ -784,16 +854,13 @@ footer
     width: 100%;
     border: none;
     outline: none;
-    background:  #f12020;
+    background:  #4f772d;
     font-size: 80%;
     font-weight: 700;
     cursor: pointer;
     transition: .3s;
 }
-.right form .btns button:hover
-{
-  background:black;
-}
+
 
 
 .bottom center
@@ -804,7 +871,7 @@ footer
 }
 .bottom center span
 {
-  color: #f12020;
+  color:  #4f772d;
   text-decoration: underline;
 }
 
